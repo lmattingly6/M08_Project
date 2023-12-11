@@ -20,7 +20,7 @@ const GlobalApp = {
   `,
   methods : {
     add() {
-      var text = "Element " + (this.elements.length + 1);
+      var text = "Task " + (this.elements.length + 1);
       axios.post("/list", {text:text})     // pass object 
                                            // {text:text} to 
                                            // server

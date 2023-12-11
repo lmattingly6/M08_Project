@@ -13,7 +13,7 @@ const Element = {
       <button @click="remove()"> Remove </button> 
       <button @click="input=true"> Modify </button>
       <button @click="input=true"> Date Planned </button>
-      <button @click="input=true"> Task CompletedS </button>
+      <button @click="input=true"> Task Completed </button>
     </li>
   `,
   props : ["element"],

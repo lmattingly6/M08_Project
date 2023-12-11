@@ -12,6 +12,8 @@ const Element = {
                     ref="refInput" />
       <button @click="remove()"> Remove </button> 
       <button @click="input=true"> Modify </button>
+      <button @click="input=true"> Date Planned </button>
+      <button @click="input=true"> Task CompletedS </button>
     </li>
   `,
   props : ["element"],

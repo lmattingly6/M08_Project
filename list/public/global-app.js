@@ -10,7 +10,7 @@ const GlobalApp = {
     Element:Element
   },
   template : `
-    <button @click="add()">Add Element</button>
+    <button @click="add()">Add Task</button>
     <ul>
       <Element v-for="(element, index) in elements" 
        :key="index" :element="element"

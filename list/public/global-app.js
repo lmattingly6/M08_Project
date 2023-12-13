@@ -10,6 +10,9 @@ const GlobalApp = {
     Element: Element,
   },
   template: `
+   <h1>
+    Leah's To-Do List
+   </h1>
   <button @click="add()">Add Task</button>
   <ul>
   <Element v-for="(element, index) in elements"
@@ -87,6 +90,7 @@ const GlobalApp = {
       });
       axios.put("/list", { dateA: value, id: id });
     },
+   
   },
   async created() {
     try {
@@ -97,6 +101,7 @@ const GlobalApp = {
           text: element.text,
           task: element.task,
           dateA: element.dateA,
+    
         };
       });
     } catch (err) {

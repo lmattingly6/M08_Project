@@ -6,18 +6,25 @@ const Element = {
     };
   },
   template: `
+  
   <li>
-  <button @click="remove()"> Remove </button>
- 
-  <span v-if="!inputTitle"> {{element.text}} </span>
+  <button @click="remove()"> Delete </button>
+  <br>
+
+  <span v-if="!inputTitle">  {{element.text}} </span>
   <input v-else type="text" :value="element.text" @blur="modify($event)" ref="refInputTitle"/>
-  <button @click="inputTitle=true">Modify task title </button>
+  &nbsp; 
+  <br>
+  <button @click="inputTitle=true">Rename </button>
+  <br>
 
   <span v-if="!inputTask"> {{element.task}}</span>
   <input v-else type="text" :value="element.task" @blur="task($event)" ref="refInputTask"/>
-  <button @click="inputTask=true">Modify task description </button>
-
-  <label>Date Assigned</label>
+  <br>
+  <button @click="inputTask=true">Edit Description </button>
+  <br>
+  <label>Assign Date</label>
+  <br>
   <input type="date" :value="element.dateA" @blur="dateA($event)" />
  
  
